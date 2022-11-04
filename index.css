@@ -611,3 +611,18 @@ body:not(.user-is-tabbing) a:focus {
         padding: var(--gutter-medium) 0;
     } 
 }
+
+/* Projects */
+
+.projects__content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+@media(max-width: 900px) {
+    .projects__content {
+        flex-direction: column-reverse;
+        align-items: initial;
+    }
+}
